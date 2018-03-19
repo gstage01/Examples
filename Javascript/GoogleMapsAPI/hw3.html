@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Garett's Favs</title>
+
+  </head>
+  <body class="main_body">
+    <nav>
+      <div class="button_container">
+        <ul>
+          <li><input type="button" onclick="change_to_places()" value="My Places"></li>
+          <li><input type="button" onclick="change_to_form()" value="Form Input"></li>
+        </ul>
+      </div>
+    </nav>
+    <table class="fav_table" id="fav_table">
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Hours of Operation<br /> Open/Close</th>
+        <th>Additional<br />Information</th>
+      </tr>
+      <tr>
+        <td>Home</td>
+        <td>1323 8th Street SE Minneapolis, MN</td>
+        <td>12:00 AM<br />11:59 PM</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Stone Arch Bridge</td>
+        <td>100 Portland Ave Minneapolis, MN 55401</td>
+        <td>6:00 AM<br />12:00 AM</td>
+        <td><a href="https://www.minneapolisparks.org/parks__destinations/historical_sites/stone_arch_bridge/">Info</a></td>
+      </tr>
+      <tr>
+        <td>Weisman Art Museum</td>
+        <td>333 E River Parkway Minneapolis, MN 55455</td>
+        <td>6:00 AM<br />12:00 AM</td>
+        <td><a href="http://wam.umn.edu/">Info</a></td>
+      </tr>
+      <tr>
+        <td>Taco Bell</td>
+        <td>1540 NE Stinson Blvd Minneapolis, MN 55401</td>
+        <td>6:00 AM<br />4:00 AM</td>
+        <td><a href="https://www.tacobell.com/">Info</a></td>
+      </tr>
+    </table>
+    <div class="twitter">
+      <a class="twitter-timeline"  href="https://twitter.com/hashtag/UMNproud" data-widget-id="958783893074796544">#UMNproud Tweets</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <label class="newLine">Radius: </label>
+    <input type="text" class="dest" id="radius"/>
+    <label class="dest">Nearby: </label>
+    <select id = "radiusType" class="sel">
+      <option value="restaurant">restaurant</option>
+      <option value="hospital">hospital</option>
+      <option value="museum">museum</option>
+      <option value="supermarket">supermarket</option>
+    </select>
+    <input type="button" value="Search Near Me" onclick="perform_search()" />
+    <br />
+    <label class="newLine">Destination: </label>
+    <input type="text" class="dest" id="getDest"/>
+    <label class="dest">Mode of Travel: </label>
+    <select id="traveltype" class="sel">
+      <option value="WALKING">Walking</option>
+      <option value="DRIVING">Driving</option>
+      <option value="BICYCLING">Bicycling</option>
+      <option value="TRANSIT">Transit</option>
+    </select>
+    <input type="button" value="Get Destination" onclick="get_directions()" />
+    <div id="right-panel"></div>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?&libraries=places&sensor=false&key=AIzaSyB5OQqjxrGmcjUz83orCBARiCXB_lAu-0k&callback=initMap"
+    defer></script>
+
+    <p>
+      Browsers used: Firefox, Chrome, and Atom live reload
+    </p>
+    <script src="hw3code.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+Commando Shell is a simple command shell for Linux in C. The only file written by me is the commando.c file.
+Because this was an in-class assignment, compilation and testing are rather hard, since it was made for automatic tests. 
