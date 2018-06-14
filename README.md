@@ -1,2 +1,2 @@
 # examples
-All projects and code snippets I've worked on throughout my career
+Projects from classes/individual work/jobs that exemplify a good set of work from multiple coding languages. My main language choice for indiviual work is often Java, but Python is a language I've picked up recently in more complex topics. Much of the rest is web development progress as I've learned to pick up and use PHP/NodeJS. I prefer network development, as the communication of systems and different languages is exciting to me.
