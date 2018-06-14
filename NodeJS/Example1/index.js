@@ -46,11 +46,12 @@ function insertPlace(req,res) {
       add_info: req.body.addressinfo,
       add_info_url: req.body.additionalinfourl
     }
+	// Edited out database information
     var con = mysql.createConnection({
-      host: "cse-curly.cse.umn.edu",
-      user: "C4131S18U114", // replace with the database user provided to you
-      password: "119", // replace with the database password provided to you
-      database: "C4131S18U114", // replace with the database user provided to you
+      host: "XXXX",
+      user: "XXXX", // replace with the database user provided to you
+      password: "XXX", // replace with the database password provided to you
+      database: "XXX", // replace with the database user provided to you
       port: 3306
     });
     con.connect(function (err) {
@@ -75,12 +76,12 @@ function addPlace(req,res) {
 
 function favourites(req,res) {
   var con = mysql.createConnection({
-    host: "cse-curly.cse.umn.edu",
-    user: "C4131S18U114", // replace with the database user provided to you
-    password: "119", // replace with the database password provided to you
-    database: "C4131S18U114", // replace with the database user provided to you
-    port: 3306
-  });
+      host: "XXXX",
+      user: "XXXX", // replace with the database user provided to you
+      password: "XXX", // replace with the database password provided to you
+      database: "XXX", // replace with the database user provided to you
+      port: 3306
+   });
   con.connect(function (err) {
     if (err) {throw err;}
     con.query("SELECT * FROM tbl_places T", function(err, results) {
@@ -97,11 +98,11 @@ function favourites(req,res) {
 
 function checkQuery(req, res) {
   var con = mysql.createConnection({
-    host: "cse-curly.cse.umn.edu",
-    user: "C4131S18U114", // replace with the database user provided to you
-    password: "119", // replace with the database password provided to you
-    database: "C4131S18U114", // replace with the database user provided to you
-    port: 3306
+      host: "XXXX",
+      user: "XXXX", // replace with the database user provided to you
+      password: "XXX", // replace with the database password provided to you
+      database: "XXX", // replace with the database user provided to you
+      port: 3306
   });
   con.connect(function(err) {
     if (err) {throw err;};

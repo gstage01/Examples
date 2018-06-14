@@ -27,7 +27,8 @@
       if (!$_SESSION["valid"]) {
         session_destroy();
         $_SESSION = array();
-        header("Location: http://www-users.cselabs.umn.edu/~stage043/login.php");
+		// Edited out URL
+        header("Location: login.php");
       }
       //Handler for logout button
       //GET requests on this page are caused by direct link or from logging in
@@ -35,7 +36,8 @@
         if ($_GET["logout"] == True) {
           session_destroy();
           $_SESSION = array();
-          header("Location: http://www-users.cselabs.umn.edu/~stage043/login.php");
+		  // Edited out URL
+          header("Location: login.php");
         }
         $sql = "SELECT * FROM tbl_places";
       //If the request is not GET, it is POST from the filter

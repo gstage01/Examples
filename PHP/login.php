@@ -39,7 +39,8 @@
         //user is used to pass the user information onto favplaces.php
         $_SESSION["valid"] = True;
         $_SESSION["user"] = $username;
-        header("Location: http://www-users.cselabs.umn.edu/~stage043/favplaces.php");
+		// Edited out database URL
+        header("Location: XXXX");
       }
     }
   }
