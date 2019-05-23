@@ -1,2 +1,17 @@
 # examples
-Projects from classes/individual work/jobs that exemplify a good set of work from multiple coding languages. My main language choice for indiviual work is often Java, but Python is a language I've picked up recently in more complex topics. Much of the rest is web development progress as I've learned to pick up and use PHP/NodeJS. I prefer network development, as the communication of systems and different languages is exciting to me.
+Projects from classes/individual work/jobs that exemplify a good set of work from multiple coding languages. 
+
+Much of my time is spent in a web environment, using NodeJS/ReactJS. With much of my work in these languages being under my previous jobs, those examples could not be released on this Github. 
+
+Of the languages shown in this repo, and described in the above statement, other experience includes:
+*MySQL and database structure
+*AWS cloud architecture including:
+	*S3
+	*Elastic Beanstalk
+	*RDS
+	*IAM
+	*Incognito
+	*IoT One-Click
+	*API Gateway
+	*Lambda
+*Google Sheets API
