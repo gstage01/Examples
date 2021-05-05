@@ -1,0 +1,1 @@
+This was a group project done in CSCI 4211 - Computer Networks. In a team of 2, the task was to use POX API to build a topological learning controller for mininet networks. This controller works by populating each switch's routing table with MAC->port values in order to forward more efficiently.

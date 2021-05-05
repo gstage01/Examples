@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Favourite's Page</title>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/favourites.html">Favourite Places</a></li>
+      <li><a href="/addPlace.html">Add Place</a></li>
+      <li><a href="/logout">Log out</a></li>
+    </ul>
+  </nav>
+</head>
+  <body>
+    <form class="addForm" name="addPlace" action="/addPlace.html" method="post">
+      <table class="form_table">
+        <tr class="formRow1">
+          <td class="formCell">Place Name</td>
+          <td class="formCell"><input type="text" name="placename" id="placename" required/></td>
+        </tr>
+        <tr class="formRow2">
+          <td class="formCell">Address Line 1</td>
+          <td class="formCell"><input type="text" name="addressline1" id="addressline1" required/></td>
+        </tr>
+        <tr class="formRow1">
+          <td class="formCell">Address Line 2</td>
+          <td class="formCell"><input type="text" name="addressline2" id="addressline2"/></td>
+        </tr>
+        <tr class="formRow2">
+          <td class="formCell">Opening Time</td>
+          <td class="formCell"><input type="time" name="opentime" required/></td>
+        </tr>
+        <tr class="formRow1">
+          <td class="formCell">Closing Time</td>
+          <td class="formCell"><input type="time" name="closetime" required/></td>
+        </tr>
+        <tr class="formRow2">
+          <td class="formCell">Additional Information</td>
+          <td class="formCell"><input type="text" name="additionalinfo" /></td>
+        </tr>
+        <tr class="formRow1">
+          <td class="formCell">Additional Info URL</td>
+          <td class="formCell"><input type="url" name="additionalURL" /></td>
+        </tr>
+        <tr><td colspan="2"><input class="submit2" type="submit" value="Submit"/></td></tr>
+      </table>
+    </form>
+  </body>
+</html>
