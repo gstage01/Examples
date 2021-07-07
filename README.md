@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # examples
 Projects from classes/individual work/jobs that exemplify a good set of work from multiple coding languages. 
 
@@ -36,4 +36,3 @@ Of the languages shown in this repo, and described in the above statement, other
 	* API Gateway
 	* Lambda
 * Google Sheets API
->>>>>>> fac084134fc8c24124d12babe72cf259ce33f12b
