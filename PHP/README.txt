@@ -1,0 +1,1 @@
+This assignment was done in CSCI 4131 - Internet Programming. The exercise was building a web server in PHP with features including: XML parsing, MySQL database queries for user login, sessions and cookies, dynamic table loading, adding form data to SQL database, and table filters. Pictures will be added soon, as database credentials and structure is hosted on UMN servers.
