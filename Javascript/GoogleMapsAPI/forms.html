@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -50,3 +51,57 @@
     <script src="hw3code.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Garett's Favs</title>
+  </head>
+  <body class="form_body">
+      <nav>
+        <div class="button_container">
+            <ul>
+              <li><input type="button" onclick="change_to_places()" value="My Places"></li>
+              <li><input type="button" onclick="change_to_form()" value="Form Input"></li>
+            </ul>
+        </div>
+      </nav>
+    <form action="http://localhost:9001/" method="post" onsubmit='return validate()'>
+      <table class="form_table">
+        <tr>
+          <td>Place Name</td>
+          <td><input type="text" name="placename" id="placename"/></td>
+        </tr>
+        <tr>
+          <td>Address Line 1</td>
+          <td><input type="text" name="addressline1" id="addressline1"/></td>
+        </tr>
+        <tr>
+          <td>Address Line 2</td>
+          <td><input type="text" name="addressline2" id="addressline2"/></td>
+        </tr>
+        <tr>
+          <td>Opening Time</td>
+          <td><input type="time" name="opentime" /></td>
+        </tr>
+        <tr>
+          <td>Closing Time</td>
+          <td><input type="time" name="closetime" /></td>
+        </tr>
+        <tr>
+          <td>Additional Information</td>
+          <td><input type="text" name="additionalinfo" /></td>
+        </tr>
+        <tr>
+          <td>Additional Info URL</td>
+          <td><input type="url" name="additionalURL" /></td>
+        </tr>
+        <tr><td></td><td><input type="submit" value="Submit"/></td></tr>
+      </table>
+    </form>
+    <script src="hw3code.js"></script>
+  </body>
+</html>
+>>>>>>> fac084134fc8c24124d12babe72cf259ce33f12b

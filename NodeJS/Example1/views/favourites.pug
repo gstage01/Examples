@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 doctype html
 html
   head
@@ -29,3 +30,36 @@ html
           td #{item.open_time}<br />#{item.close_time}
           td #{item.add_info}
           td #{item.add_info_url}
+=======
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet" href="../style.css")
+    title Favourite's Page
+    nav
+      ul
+        li
+          a(href="/") Home
+        li
+          a(href="/favourites.html") Favourite Places
+        li
+          a(href="/addPlace.html") Add Place
+        li
+          a(href="logout") Log out
+  body
+    table
+      tr
+        th Name
+        th Address
+        th Open / Close
+        th Information
+        th URL
+      for item in list
+        tr
+          td #{item.place_name}
+          td #{item.addr_line1}<br />#{item.addr_line2}
+          td #{item.open_time}<br />#{item.close_time}
+          td #{item.add_info}
+          td #{item.add_info_url}
+>>>>>>> fac084134fc8c24124d12babe72cf259ce33f12b

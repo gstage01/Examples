@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 Manifest-Version: 1.0
 Main-Class: MainFrame
 
+=======
+Manifest-Version: 1.0
+Main-Class: MainFrame
+
+>>>>>>> fac084134fc8c24124d12babe72cf259ce33f12b

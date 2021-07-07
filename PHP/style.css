@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .textArea {
     background: #51db7c;
@@ -138,3 +139,145 @@ p {
 .break {
   margin-bottom: 30px;
 }
+=======
+
+.textArea {
+    background: #51db7c;
+    text-align: center;
+    height: 250px;
+    max-height: 200px;
+}
+
+.formContainer {
+  margin: 100px 0px 100px 100px;
+}
+form input {
+  width: 90%;
+  border: 1px solid #E0E0E0;
+  height: 30px;
+}
+.formText {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.errorText {
+  color: red;
+  text-align: center;
+  line-height: 125px;
+  margin-bottom: -125px;
+}
+
+.submit {
+  height: 30px;
+  width: 90%;
+  background-color: #506DED;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+}
+h1 {
+  line-height: 200px;
+  position: relative;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: -75px;
+}
+nav {
+  background-color: #0b4426;
+  margin: -10px;
+  padding: 0;
+  height: 50px;
+  width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  display: block;
+}
+
+li {
+  color: white;
+  height: 100%;
+  float: left;
+  display: block;
+  padding: 15px;
+  padding-right: 25px;
+  text-decoration: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+li a {
+  text-decoration: none !important;
+  color: white;
+  font-size: 18px;
+  display: block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+li a:hover {
+  color: white !important;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.user_wrapper {
+  float: right;
+}
+
+.last-child {
+  margin-top: 0px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color:
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+.body-wrapper {
+  margin-top: 100px;
+  text-align: left;
+  margin-left: 10%;
+  width: 60%;
+  height: 100%;
+}
+
+table {
+  width: 75%;
+  margin-bottom: 50px;
+}
+
+th {
+  border: 3px solid #adb0b5;
+  padding: 5px;
+  text-align: center;
+}
+
+td {
+  border: 1px solid #adb0b5;
+  padding: 5px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.break {
+  margin-bottom: 30px;
+}
+>>>>>>> fac084134fc8c24124d12babe72cf259ce33f12b

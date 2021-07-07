@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 table, td, th {
   border: 2px solid black;
   border-collapse: collapse;
@@ -22,3 +23,29 @@ h1 {
 a {
   color: gold;
 }
+=======
+table, td, th {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td, th {
+  text-align: center;
+  background-color: maroon;
+  color: gold;
+  padding: 5px;
+}
+
+table {
+  margin: 0px auto;
+}
+
+h1 {
+    color: gold;
+    text-align: center;
+}
+
+a {
+  color: gold;
+}
+>>>>>>> fac084134fc8c24124d12babe72cf259ce33f12b

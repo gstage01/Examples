@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -80,3 +81,87 @@
         </div>
     </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+        <title>Programming Assignment 2: Surface of Revolution</title>
+
+        <script id="vertex-shader" type="x-shader/x-vertex">
+            attribute vec3 vPosition;
+            uniform mat4 modelView;
+            uniform mat4 projection;
+            attribute vec2 a_texcoord;
+            attribute vec3 a_normal;
+
+            uniform mat4 u_world;
+            uniform mat4 u_worldProjection;
+
+            varying vec2 v_texcoord;
+            varying vec3 v_normal;
+            void main()
+            {
+                gl_Position = projection * modelView * vec4(vPosition, 1.0);
+                v_texcoord = a_texcoord;
+                v_normal = mat3(u_world) * a_normal;
+            }
+        </script>
+
+        <script id="fragment-shader" type="x-shader/x-fragment">
+            precision mediump float;
+
+            uniform vec3 triangleColor;
+            varying vec2 v_texcoord;
+            varying vec3 v_normal;
+
+            uniform vec3 u_reverseLightDirection;
+            uniform sampler2D u_texture;
+
+            void main()
+            {
+                vec3 normal = normalize(v_normal);
+
+                float light = dot(normal, u_reverseLightDirection);
+                gl_FragColor = texture2D(u_texture, v_texcoord);
+                gl_FragColor.rgb *= light;
+            }
+        </script>
+
+        <script type="text/javascript" src="webgl-utils.js"></script>
+        <script type="text/javascript" src="initShaders.js"></script>
+        <script type="text/javascript" src="MV.js"></script>
+        <script type="text/javascript" src="program3.js"></script>
+    </head>
+
+    <body>
+        <canvas id="gl-canvas" width="512" height="400">
+            Oops ... your browser doesn't support the HTML5 canvas element
+        </canvas>
+        <div>
+            Shape:
+            <select id="shape-select">
+                <option value="profile1">Profile 1</option>
+                <option value="profile2">Profile 2</option>
+                <option value="profile3">Profile 3</option>
+                <option value="profile4">Profile 4</option>
+                <option value="profile5">Profile 5</option>
+            </select>
+        </div>
+        <div>
+            Number of angles: <input id="numAngles" type="number" value="8" min="3" max="25" step="1" />
+        </div>
+        <div>
+            Number of steps per curve: <input id="stepsPerCurve" type="number" value="6" min="2" max="10" step="1" />
+        </div>
+        <div>
+            Material:
+            <select id="material">
+                <option value="plastic" selected="selected">Yellow Plastic</option>
+                <option value="brass">Brass Metal</option>
+                <option value="texture">Texture Map</option>
+            </select>
+        </div>
+    </body>
+</html>
+>>>>>>> fac084134fc8c24124d12babe72cf259ce33f12b

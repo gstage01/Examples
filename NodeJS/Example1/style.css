@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .textArea {
     background: #51db7c;
@@ -123,3 +124,130 @@ td {
   color: white;
   min-height: 40px;
 }
+=======
+
+.textArea {
+    background: #51db7c;
+    text-align: center;
+    height: 250px;
+    max-height: 200px;
+}
+
+.formContainer {
+  margin: 100px 0px 100px 100px;
+}
+form input {
+  width: 90%;
+  border: 1px solid #E0E0E0;
+  height: 30px;
+}
+.formText {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.errorText {
+  color: red;
+  text-align: center;
+  line-height: 125px;
+  margin-bottom: -125px;
+}
+
+.submit {
+  height: 30px;
+  width: 90%;
+  background-color: #506DED;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+}
+h1 {
+  line-height: 200px;
+  position: relative;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: -75px;
+}
+nav {
+  background-color: #0b4426;
+  margin: -10px;
+  padding: 0;
+  height: 50px;
+  width: 110%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  display: block;
+}
+
+li {
+  color: white;
+  height: 100%;
+  float: left;
+  display: block;
+  padding: 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+table {
+  margin: 100px;
+  width: 75%;
+  border-collapse: collapse;
+}
+
+th {
+  color: white;
+  border: 1px solid grey;
+  background-color: #137a76;
+  height: 35px;
+}
+td {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border: 0.5px solid grey;
+}
+
+.formRow1 {
+  background: #cecece;
+  min-height: 50px;
+  min-width: 50px;
+  text-align: center;
+}
+.formRow2 {
+  background: white;
+  min-height: 50px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.form_table {
+  max-width: 400px;
+  min-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.submit2 {
+  background-color: #506DED;
+  color: white;
+  min-height: 40px;
+}
+>>>>>>> fac084134fc8c24124d12babe72cf259ce33f12b
