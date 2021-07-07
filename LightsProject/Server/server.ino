@@ -180,8 +180,8 @@ void bpm()
 
 ESP8266WebServer server(80);
 
-const char* wifi_user = "Give Me Laundry Money";
-const char* wifi_pass = "Fucking_Fredo";
+const char* wifi_user = "";
+const char* wifi_pass = "";
 
 
 void setup() {
